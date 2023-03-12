@@ -9,7 +9,8 @@
   <body>
     <h1>Menu</h1>
 
-    <table>
+    <table border="1">
+        <thead>
       <caption>
         PIZZAS
       </caption>
@@ -18,9 +19,12 @@
         <th>Sabor</th>
         <th>Tamanho</th>
         <th>Preço</th>
+  
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td>
+        <td rowspan="3">
           <img
             src="./images/pizza-5-queijos.jpg"
             alt="pizza 5 quijos"
@@ -28,25 +32,24 @@
             hieght="100"
           />
         </td>
-        <td>5 Queijos</td>
+        <td rowspan="3">5 Queijos <div>Queijo mussarela,brie,provolone,gorgonzola,catupiry. </div>
+        </td>
+      
         <td>P</td>
         <td>R$35,90</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
-        <td>M</td>
-        <td>R$39,50</td>
+        <td colspan="1">M</td>
+        <td colspan="1">R$39,50</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+    
         <td>G</td>
-        <td>R$45,60</td>
+        <td >R$45,60</td>
       </tr>
       <tr></tr>
       <tr>
-        <td>
+        <td rowspan="3">
           <img
             src="./images/pizza-marguerita.jpg"
             alt="pizza marguerita"
@@ -54,25 +57,27 @@
             hieght="100"
           />
         </td>
-        <td>Marguerita</td>
+        <td rowspan="3">Marguerita
+             <div>
+            Molho de tomate, mussarela,tomate e manjericão.
+             </div>
+            </td>
         <td>P</td>
         <td>R$38,20</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+       
         <td>M</td>
         <td>R$41,50</td>
       </tr>
       <tr>
-        <td></td>
-        <td></td>
+        
         <td>G</td>
         <td>R$48,60</td>
       </tr>
       <tr></tr>
       <tr>
-        <td>
+        <td rowspan="3">
           <img
             src="./images/Pizza-Pepperoni.jpg"
             alt="pizza pepperoni"
@@ -80,26 +85,28 @@
             hieght="100"
           />
         </td>
-        <td>Pepperoni</td>
+        <td rowspan="3">Pepperoni
+            <div>
+                Molho de tomate, queijo mussarela, pepperoni.
+            </div>
+        </td>
         <td>P</td>
         <td>R$29,90</td>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
+      <tr rowspan="3">
+       
         <td>M</td>
         <td>R$32,50</td>
       </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td>G</td>
-        <td>R$39,60</td>
+     
+       <tr rowspan="3">
+        <td >G</td>
+        <td >R$39,60</td>
       </tr>
       <tr></tr>
     </table>
     <br />
-    <table>
+    <table border="1">
       <caption>
         BEBIDAS
       </caption>
@@ -137,9 +144,9 @@
       </tr>
 
       <tr>
-        <td></td>
-        <td>Suco Natural da fruta</td>
-        <td></td>
+    
+        <td colspan="3">Suco Natural da fruta</td>
+    
       </tr>
 
       <tr>
@@ -167,6 +174,16 @@
         <td>Copo</td>
         <td>R$12,50</td>
       </tr>
+    </tbody>
+    <tfoot>
+        <tr colspan="3"> 
+            <th> Peça por delivery:
+                <td>
+                 Telefone: 71 3333-5465
+                </td>
+            </th>
+        </tr>
+    </tfoot>
     </table>
   </body>
 </html>
